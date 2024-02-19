@@ -1,0 +1,4 @@
+.heroesList {
+    display: flex;
+    flex-wrap: wrap;
+}
