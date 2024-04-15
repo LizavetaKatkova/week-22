@@ -1,10 +1,10 @@
 import './Hero.css';
 
 function Hero(props) {
-    const {heroName, universe, alterego, occupation, friends, superpowers, info, img} = props;
+    const {hero, universe, alterego, occupation, friends, superpowers, img} = props;
     return <div className="hero">
         <div className="card_top">
-        <h2 className='hero__name'>{heroName}</h2>
+        <h2 className='hero__name'>{hero}</h2>
         <div className='hero__info'>
             <p className="hero__info_universe"><span>Вселенная: </span>{universe}</p>
             <p className="hero__info_alterego"><span>Альтер эго: </span>{alterego}</p>
@@ -14,7 +14,7 @@ function Hero(props) {
         </div>
         </div>
         <div className="card_bottom">
-        <img src={img} alt="" className='hero__img'/>
+        <img src={img} alt={hero} className='hero__img'/>
         </div>
     </div>
 }
